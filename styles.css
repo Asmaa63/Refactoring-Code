@@ -1,187 +1,176 @@
 /* Define primary colors and theme variables */
-:root {
-  --primary-color: #007bff;
-  --background-color: #f8f9fa;
-  --text-color: #212529;
-  --yellow-color: #ffc107;
+ :root {
+     --primary-color: #007bff;
+     --background-color: #f8f9fa;
+     --text-color: #212529;
+     --yellow-color: #ffc107;
 }
-
 /* Dark mode theme overrides */
-[data-theme="dark"] {
-  --primary-color: #0d6efd;
-  --background-color: #212529;
+ [data-theme="dark"] {
+     --primary-color: #0d6efd;
+     --background-color: #212529;
 }
-
 /* Reset margin, padding, and enable smooth scrolling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
+ html {
+     scroll-behavior: smooth;
 }
-
 /* General body styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
+ body {
+     font-family: Arial, sans-serif;
+     background-color: var(--background-color);
+     color: var(--text-color);
 }
-
 /* Header navigation links */
-.nav-link {
-  position: relative;
-  transition: color 0.3s ease, background-color 0.3s ease;
-  padding: 5px 15px;
-  border-radius: 5px;
-  border: 1px solid transparent;
+ .nav-link {
+     position: relative;
+     transition: color 0.3s ease, background-color 0.3s ease;
+     padding: 5px 15px;
+     border-radius: 5px;
+     border: 1px solid transparent;
 }
-.nav-link:hover {
-  color: var(--background-color);
-  background-color: var(--primary-color);
-  border-color: var(--background-color);
+ .nav-link:hover {
+     color: var(--background-color);
+     background-color: var(--primary-color);
+     border-color: var(--background-color);
 }
-
 /* Sidebar links styles */
-.sidebar a {
-  position: relative;
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: color 0.3s ease, background-color 0.3s ease;
-  padding: 5px 10px;
-  display: block;
-  border-radius: 5px;
+ .sidebar a {
+     position: relative;
+     color: var(--primary-color);
+     text-decoration: none;
+     transition: color 0.3s ease, background-color 0.3s ease;
+     padding: 5px 10px;
+     display: block;
+     border-radius: 5px;
 }
-.sidebar a:hover {
-  color: var(--background-color);
-  background-color: var(--primary-color);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+ .sidebar a:hover {
+     color: var(--background-color);
+     background-color: var(--primary-color);
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-.sidebar a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--yellow-color);
-  transition: width 0.3s ease;
+ .sidebar a::after {
+     content: '';
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 0;
+     height: 2px;
+     background-color: var(--yellow-color);
+     transition: width 0.3s ease;
 }
-.sidebar a:hover::after {
-  width: 100%;
+ .sidebar a:hover::after {
+     width: 100%;
 }
-
 /* Post styles */
-.post {
-  border-left: 5px solid var(--primary-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ .post {
+     border-left: 5px solid var(--primary-color);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.post:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+ .post:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-.post h2 {
-  color: var(--primary-color);
-  font-weight: bold;
+ .post h2 {
+     color: var(--primary-color);
+     font-weight: bold;
 }
-.post a.btn {
-  transition: all 0.3s ease;
+ .post a.btn {
+     transition: all 0.3s ease;
 }
-.post a.btn:hover {
-  background-color: var(--primary-color);
-  color: var(--background-color);
-  border-color: var(--primary-color);
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+ .post a.btn:hover {
+     background-color: var(--primary-color);
+     color: var(--background-color);
+     border-color: var(--primary-color);
+     border-radius: 5px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-
 /* Sidebar styling */
-.sidebar {
-  background-color: var(--background-color);
-  transition: transform 0.3s ease;
+ .sidebar {
+     background-color: var(--background-color);
+     transition: transform 0.3s ease;
 }
-.sidebar:hover {
-  transform: scale(1.02);
+ .sidebar:hover {
+     transform: scale(1.02);
 }
-
 /* Contact section icons hover effect */
-.contact-us .bi {
-  transition: transform 0.3s ease, color 0.3s ease;
+ .contact-us .bi {
+     transition: transform 0.3s ease, color 0.3s ease;
 }
-.contact-us .bi:hover {
-  transform: scale(1.2);
-  color: var(--primary-color);
+ .contact-us .bi:hover {
+     transform: scale(1.2);
+     color: var(--primary-color);
 }
-.contact-us h5 {
-  margin-top: 10px;
-  font-weight: bold;
+ .contact-us h5 {
+     margin-top: 10px;
+     font-weight: bold;
 }
-
 /* Back-to-top button */
-#backToTop {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: var(--primary-color);
-  color: var(--background-color);
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 1.5rem;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease;
+ #backToTop {
+     display: none;
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     background: var(--primary-color);
+     color: var(--background-color);
+     border: none;
+     border-radius: 50%;
+     width: 40px;
+     height: 40px;
+     font-size: 1.5rem;
+     align-items: center;
+     justify-content: center;
+     transition: transform 0.3s ease;
 }
-#backToTop.show {
-  display: block;
-  opacity: 1;
-  transform: scale(1);
+ #backToTop.show {
+     display: block;
+     opacity: 1;
+     transform: scale(1);
 }
-#backToTop:hover {
-  background-color: var(--primary-color);
+ #backToTop:hover {
+     background-color: var(--primary-color);
 }
-
 /* Dark mode toggle button */
-.dark-mode-toggle {
-  position: fixed;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  background-color: #f1f1f1;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  z-index: 1000;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+ .dark-mode-toggle {
+     position: fixed;
+     top: 50%;
+     right: 20px;
+     transform: translateY(-50%);
+     background-color: #f1f1f1;
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     cursor: pointer;
+     z-index: 1000;
+     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-.dark-mode-toggle:hover {
-  transform: translateY(-50%) scale(1.1);
+ .dark-mode-toggle:hover {
+     transform: translateY(-50%) scale(1.1);
 }
-
 /* Dark mode icon styles */
-.dark-mode-toggle i {
-  font-size: 24px;
-  color: #212529;
-  transition: color 0.3s ease;
+ .dark-mode-toggle i {
+     font-size: 24px;
+     color: #212529;
+     transition: color 0.3s ease;
 }
-body[data-theme="dark"] .dark-mode-toggle {
-  background-color: #333;
+ body[data-theme="dark"] .dark-mode-toggle {
+     background-color: #333;
 }
-body[data-theme="dark"] .dark-mode-toggle i {
-  color: #f1f1f1;
+ body[data-theme="dark"] .dark-mode-toggle i {
+     color: #f1f1f1;
 }
-
 /* Responsive styles for small screens */
-@media (max-width: 768px) {
-  .sidebar {
-    transform: scale(1);
-  }
+ @media (max-width: 768px) {
+     .sidebar {
+         transform: scale(1);
+    }
 }
+ 

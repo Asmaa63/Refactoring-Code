@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,8 +21,10 @@
 
   <!-- Preload custom CSS for better performance -->
   <link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
+
+  <!-- Fallback for browsers with JavaScript disabled -->
+  <link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
   <noscript>
-    <!-- Fallback for browsers with JavaScript disabled -->
     <link rel="stylesheet" href="styles.css">
   </noscript>
 
@@ -38,7 +41,8 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="50"></body>
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary custom-navbar" data-aos="fade-down" data-aos-duration="800">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary custom-navbar" data-aos="fade-down"
+    data-aos-duration="800">
     <div class="container">
       <a class="navbar-brand custom-brand" href="#">My Blog</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -187,4 +191,5 @@
 </script>
 <script src="scripts.js" defer></script>
 </body>
+
 </html>
